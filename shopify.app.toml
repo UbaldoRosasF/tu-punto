@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Tu Punto"
+client_id = "0cd216e81ece4769d7509e7ea9c1021b"
+application_url = "https://binding-authorized-oxide-upload.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://binding-authorized-oxide-upload.trycloudflare.com/auth/callback",
+  "https://binding-authorized-oxide-upload.trycloudflare.com/auth/shopify/callback",
+  "https://binding-authorized-oxide-upload.trycloudflare.com/api/auth/callback",
+  "https://binding-authorized-oxide-upload.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "tu-punto-td.myshopify.com"
